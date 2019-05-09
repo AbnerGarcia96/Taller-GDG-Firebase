@@ -75,8 +75,10 @@ function editar(id){
         edad: $('#edad').val()
     }
     db.collection('registros').doc(id).update(data).then(() => {
+        $('#nombre').val('');
+        $('#edad').val('');
+        $('#botones').html('<button type="button" class="btn btn-success" onclick="nuevoRegistro()">Crear</button>');   
         obtenerRegistros();
-        $('#botones').html('<button type="button" class="btn btn-success" onclick="nuevoRegistro()">Crear</button>');
     }).catch(console.error);
 }
 

@@ -1,0 +1,21 @@
+.padding-top {
+    padding-top: 1em;
+}
+
+.margin-top {
+    margin-top: 1em;
+}
+
+.login {
+    width: 500px;
+}
+
+.register {
+    margin-top: 1em !important;
+    width: 500px;
+}
+
+.center{
+    position: relative;
+    margin: auto;
+}
